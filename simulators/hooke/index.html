@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simulador de Ley de Hooke.">
+  <title>Ley de Hooke | Laboratorio Virtual de Física</title>
+  <link rel="stylesheet" href="../../assets/css/simulator.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="sim-header">
+    <nav class="sim-nav" aria-label="Principal">
+      <a class="back-link" href="../../" data-i18n="footer.backHome">Volver al catálogo</a>
+      <select class="language-select" data-language-select aria-label="Idioma">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+      </select>
+    </nav>
+  </header>
+
+  <main>
+    <section class="sim-hero">
+      <span class="badge" data-i18n="simulators.hooke.badge">Fuerzas y elasticidad</span>
+      <h1 data-i18n="simulators.hooke.title">Ley de Hooke</h1>
+      <p data-i18n="simulators.hooke.intro">Modifica la masa, la gravedad y la constante elástica k.</p>
+    </section>
+
+    <section class="lab-layout">
+      <aside class="panel">
+        <h2 data-i18n="simulators.hooke.introTitle">Dinamómetro virtual</h2>
+        <div class="control">
+          <label for="masa" data-i18n="simulators.hooke.controls.mass">Masa (kg)</label>
+          <div class="dual-input">
+            <input type="range" id="masa" min="0.1" max="10" step="0.1" value="1">
+            <input type="number" id="masaNum" min="0.1" max="10" step="0.1" value="1">
+          </div>
+          <div class="value" id="mVal"></div>
+        </div>
+
+        <div class="control">
+          <label for="k" data-i18n="simulators.hooke.controls.spring">Constante k (N/m)</label>
+          <div class="dual-input">
+            <input type="range" id="k" min="10" max="500" step="0.1" value="100">
+            <input type="number" id="kNum" min="10" max="500" step="0.1" value="100">
+          </div>
+          <div class="value" id="kVal"></div>
+        </div>
+
+        <div class="control">
+          <label for="g" data-i18n="simulators.hooke.controls.gravity">Gravedad (m/s²)</label>
+          <input type="range" id="g" min="1" max="20" step="0.1" value="9.8">
+          <div class="value" id="gVal"></div>
+        </div>
+
+        <div class="button-row">
+          <button class="button primary" id="applyBtn" type="button" data-i18n="simulators.hooke.controls.apply">Aplicar masa</button>
+          <button class="button warning" id="resetBtn" type="button" data-i18n="simulators.hooke.controls.reset">Reset</button>
+        </div>
+
+        <h2 data-i18n="simulators.hooke.controls.table">Tabla de ensayos</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>#</th><th data-i18n="simulators.hooke.controls.mass">Masa (kg)</th><th>k (N/m)</th><th data-i18n="simulators.hooke.controls.force">Fuerza</th><th data-i18n="simulators.hooke.controls.elongation">Elongación</th></tr>
+            </thead>
+            <tbody id="tabla"></tbody>
+          </table>
+        </div>
+      </aside>
+
+      <div class="workspace">
+        <div class="canvas-panel">
+          <canvas class="hooke-canvas" id="cv" width="420" height="620"></canvas>
+        </div>
+        <article class="learn-panel">
+          <h2 data-i18n="simulators.hooke.introTitle">Dinamómetro virtual</h2>
+          <div class="learn-grid">
+            <div class="learn-item"><strong data-i18n="learn.phenomenon">Fenómeno</strong><p data-i18n="simulators.hooke.description">Explora cómo una masa deforma un resorte.</p></div>
+            <div class="learn-item"><strong data-i18n="learn.variables">Variables</strong><p data-i18n="simulators.hooke.variables">Masa, gravedad, fuerza, constante elástica k y elongación.</p></div>
+            <div class="learn-item"><strong data-i18n="learn.results">Resultados</strong><p data-i18n="simulators.hooke.results">Observa fuerza, estiramiento, animación del resorte y tabla.</p></div>
+            <div class="learn-item"><strong data-i18n="learn.concepts">Conceptos</strong><p data-i18n="simulators.hooke.formula">Relación aplicada: F = kx, con F = mg.</p></div>
+            <div class="learn-item"><strong data-i18n="learn.educationalUse">Uso educativo</strong><p data-i18n="simulators.hooke.use">Ayuda a comprender la proporcionalidad.</p></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <section class="credits" aria-label="Créditos">
+    <p><strong data-i18n="credits.line1">Simuladores desarrollados por Yandri Franco</strong></p>
+    <p data-i18n="credits.line2">Diseño Web Washington Indacochea</p>
+    <p data-i18n="credits.line3">para los estudiantes de la Unidad Educativa 30 de Septiembre.</p>
+  </section>
+
+  <script src="../../assets/js/i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

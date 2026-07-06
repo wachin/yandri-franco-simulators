@@ -1,0 +1,20 @@
+[
+  {
+    "id": "hooke",
+    "slug": "hooke",
+    "url": "simulators/hooke/",
+    "thumbnail": "simulators/hooke/thumbnail.webp",
+    "status": "available",
+    "level": "Bachillerato",
+    "topics": ["elasticity", "forces", "measurement"]
+  },
+  {
+    "id": "movimiento-parabolico",
+    "slug": "movimiento-parabolico",
+    "url": "simulators/movimiento-parabolico/",
+    "thumbnail": "simulators/movimiento-parabolico/thumbnail.webp",
+    "status": "available",
+    "level": "Bachillerato",
+    "topics": ["kinematics", "vectors", "gravity"]
+  }
+]

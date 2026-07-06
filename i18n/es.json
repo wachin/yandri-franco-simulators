@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "siteTitle": "Laboratorio Virtual de Física | Yandri Franco",
+    "siteDescription": "Plataforma educativa de simuladores de Física para estudiantes de la Unidad Educativa 30 de Septiembre."
+  },
+  "nav": {
+    "brand": "Laboratorio Virtual de Física",
+    "catalog": "Simuladores",
+    "about": "Proyecto",
+    "language": "Idioma"
+  },
+  "hero": {
+    "eyebrow": "Unidad Educativa 30 de Septiembre",
+    "title": "Simuladores de Física para explorar, medir y comprender",
+    "subtitle": "Una plataforma educativa modular creada para que cada fenómeno físico tenga su propio espacio interactivo, claro y listo para crecer.",
+    "primaryCta": "Ver simuladores",
+    "secondaryCta": "Cómo ampliar la plataforma"
+  },
+  "stats": {
+    "simulators": "simuladores activos",
+    "languages": "idiomas iniciales",
+    "static": "publicable en GitHub Pages"
+  },
+  "catalog": {
+    "eyebrow": "Catálogo dinámico",
+    "title": "Simuladores disponibles",
+    "description": "Las tarjetas se generan desde data/simulators.json. Para sumar nuevos temas basta con añadir su carpeta, su entrada de datos y sus textos traducidos.",
+    "open": "Abrir simulador",
+    "topics": "Temas",
+    "level": "Nivel"
+  },
+  "learn": {
+    "phenomenon": "Fenómeno",
+    "variables": "Variables",
+    "results": "Resultados",
+    "concepts": "Conceptos",
+    "educationalUse": "Uso educativo"
+  },
+  "about": {
+    "eyebrow": "Base escalable",
+    "title": "Diseñada como una plataforma, no como una página aislada",
+    "body": "Cada simulador vive en su propia URL, con HTML, CSS, JavaScript y recursos independientes. El catálogo principal solo lee datos y traducciones, por lo que el proyecto puede crecer sin tocar el código central."
+  },
+  "future": {
+    "title": "Próximos laboratorios",
+    "items": ["Péndulo simple", "Caída libre", "Leyes de Newton", "Energía mecánica", "Ondas", "Circuitos eléctricos", "Óptica", "Movimiento circular", "Presión", "Fluidos"]
+  },
+  "credits": {
+    "line1": "Simuladores desarrollados por Yandri Franco",
+    "line2": "Diseño Web Washington Indacochea",
+    "line3": "para los estudiantes de la Unidad Educativa 30 de Septiembre."
+  },
+  "footer": {
+    "repo": "Proyecto listo para GitHub Pages",
+    "backHome": "Volver al catálogo"
+  },
+  "simulators": {
+    "hooke": {
+      "title": "Ley de Hooke",
+      "shortTitle": "LHokke",
+      "description": "Explora cómo una masa deforma un resorte o dinamómetro según la constante elástica y la gravedad.",
+      "badge": "Fuerzas y elasticidad",
+      "introTitle": "Dinamómetro virtual",
+      "intro": "Modifica la masa, la gravedad y la constante elástica k para observar la fuerza aplicada y la elongación del resorte.",
+      "variables": "Masa, gravedad, fuerza, constante elástica k y elongación.",
+      "results": "Observa fuerza, estiramiento, animación del resorte y tabla de ensayos.",
+      "formula": "Relación aplicada: F = kx, con F = mg.",
+      "use": "Ayuda a comprender la proporcionalidad entre fuerza y deformación en materiales elásticos.",
+      "controls": {
+        "mass": "Masa (kg)",
+        "spring": "Constante k (N/m)",
+        "gravity": "Gravedad (m/s²)",
+        "apply": "Aplicar masa",
+        "reset": "Reset",
+        "table": "Tabla de ensayos",
+        "force": "Fuerza",
+        "elongation": "Elongación"
+      }
+    },
+    "movimiento-parabolico": {
+      "title": "Movimiento Parabólico",
+      "shortTitle": "MovPar",
+      "description": "Simula lanzamientos con velocidad inicial, ángulo y gravedad para analizar trayectoria, alcance y altura máxima.",
+      "badge": "Cinemática bidimensional",
+      "introTitle": "Lanzamiento de proyectiles",
+      "intro": "Ajusta velocidad inicial, ángulo, gravedad y velocidad de simulación para comparar ensayos de movimiento parabólico.",
+      "variables": "Velocidad inicial, ángulo de lanzamiento y gravedad.",
+      "results": "Observa trayectoria, gráficas, componentes de velocidad, altura máxima, alcance y tiempo de vuelo.",
+      "formula": "Conceptos aplicados: movimiento horizontal uniforme y movimiento vertical uniformemente acelerado.",
+      "use": "Permite relacionar vectores de velocidad, gravedad y posición durante un lanzamiento.",
+      "controls": {
+        "velocity": "Velocidad inicial",
+        "angle": "Ángulo",
+        "gravity": "Gravedad",
+        "speed": "Velocidad simulación",
+        "fire": "Disparar",
+        "pause": "Pausa",
+        "resume": "Reanudar",
+        "step": "Paso",
+        "reset": "Reset",
+        "maxHeight": "Altura máx",
+        "range": "Alcance",
+        "time": "Tiempo",
+        "distance": "Distancia",
+        "height": "Altura",
+        "start": "Inicio",
+        "trial": "Ensayo",
+        "current": "Actual"
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simulador de Movimiento Parabólico.">
+  <title>Movimiento Parabólico | Laboratorio Virtual de Física</title>
+  <link rel="stylesheet" href="../../assets/css/simulator.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="sim-header">
+    <nav class="sim-nav" aria-label="Principal">
+      <a class="back-link" href="../../" data-i18n="footer.backHome">Volver al catálogo</a>
+      <select class="language-select" data-language-select aria-label="Idioma">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+      </select>
+    </nav>
+  </header>
+
+  <main>
+    <section class="sim-hero">
+      <span class="badge" data-i18n="simulators.movimiento-parabolico.badge">Cinemática bidimensional</span>
+      <h1 data-i18n="simulators.movimiento-parabolico.title">Movimiento Parabólico</h1>
+      <p data-i18n="simulators.movimiento-parabolico.intro">Ajusta velocidad inicial, ángulo, gravedad y velocidad de simulación.</p>
+    </section>
+
+    <section class="lab-layout projectile-layout">
+      <aside class="panel">
+        <h2 data-i18n="simulators.movimiento-parabolico.introTitle">Lanzamiento de proyectiles</h2>
+        <div class="control">
+          <label for="v" data-i18n="simulators.movimiento-parabolico.controls.velocity">Velocidad inicial</label>
+          <input type="range" id="v" min="5" max="500" value="40">
+          <div class="value" id="vVal"></div>
+        </div>
+        <div class="control">
+          <label for="ang" data-i18n="simulators.movimiento-parabolico.controls.angle">Ángulo</label>
+          <input type="range" id="ang" min="0" max="90" value="45">
+          <div class="value" id="angVal"></div>
+        </div>
+        <div class="control">
+          <label for="g" data-i18n="simulators.movimiento-parabolico.controls.gravity">Gravedad</label>
+          <input type="range" id="g" min="1" max="20" value="9.8" step="0.1">
+          <div class="value" id="gVal"></div>
+        </div>
+        <div class="control">
+          <label for="slow" data-i18n="simulators.movimiento-parabolico.controls.speed">Velocidad simulación</label>
+          <input type="range" id="slow" min="0.1" max="1" step="0.1" value="1">
+          <div class="value" id="slowVal"></div>
+        </div>
+
+        <div class="button-row">
+          <button class="button primary" id="fireBtn" type="button" data-i18n="simulators.movimiento-parabolico.controls.fire">Disparar</button>
+          <button class="button" id="btnPause" type="button" data-i18n="simulators.movimiento-parabolico.controls.pause">Pausa</button>
+          <button class="button" id="stepBtn" type="button" data-i18n="simulators.movimiento-parabolico.controls.step">Paso</button>
+          <button class="button warning" id="resetBtn" type="button" data-i18n="simulators.movimiento-parabolico.controls.reset">Reset</button>
+        </div>
+
+        <div class="table-wrap">
+          <table id="tablaEnsayos"></table>
+        </div>
+      </aside>
+
+      <div class="workspace">
+        <div class="canvas-panel projectile-canvas-panel">
+          <canvas id="cv" width="900" height="350"></canvas>
+          <canvas id="graf" width="900" height="220"></canvas>
+        </div>
+        <article class="learn-panel">
+          <h2 data-i18n="simulators.movimiento-parabolico.introTitle">Lanzamiento de proyectiles</h2>
+          <div class="learn-grid">
+            <div class="learn-item"><strong data-i18n="learn.phenomenon">Fenómeno</strong><p data-i18n="simulators.movimiento-parabolico.description">Simula lanzamientos.</p></div>
+            <div class="learn-item"><strong data-i18n="learn.variables">Variables</strong><p data-i18n="simulators.movimiento-parabolico.variables">Velocidad inicial, ángulo y gravedad.</p></div>
+            <div class="learn-item"><strong data-i18n="learn.results">Resultados</strong><p data-i18n="simulators.movimiento-parabolico.results">Observa trayectoria y gráficas.</p></div>
+            <div class="learn-item"><strong data-i18n="learn.concepts">Conceptos</strong><p data-i18n="simulators.movimiento-parabolico.formula">Movimiento horizontal y vertical.</p></div>
+            <div class="learn-item"><strong data-i18n="learn.educationalUse">Uso educativo</strong><p data-i18n="simulators.movimiento-parabolico.use">Relaciona vectores y gravedad.</p></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <section class="credits" aria-label="Créditos">
+    <p><strong data-i18n="credits.line1">Simuladores desarrollados por Yandri Franco</strong></p>
+    <p data-i18n="credits.line2">Diseño Web Washington Indacochea</p>
+    <p data-i18n="credits.line3">para los estudiantes de la Unidad Educativa 30 de Septiembre.</p>
+  </section>
+
+  <script src="../../assets/js/i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

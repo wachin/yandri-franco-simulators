@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "siteTitle": "Virtual Physics Lab | Yandri Franco",
+    "siteDescription": "Educational Physics simulator platform for Unidad Educativa 30 de Septiembre students."
+  },
+  "nav": {
+    "brand": "Virtual Physics Lab",
+    "catalog": "Simulators",
+    "about": "Project",
+    "language": "Language"
+  },
+  "hero": {
+    "eyebrow": "Unidad Educativa 30 de Septiembre",
+    "title": "Physics simulators for exploring, measuring and understanding",
+    "subtitle": "A modular educational platform where each physics phenomenon has its own clear, interactive and expandable space.",
+    "primaryCta": "View simulators",
+    "secondaryCta": "How to extend it"
+  },
+  "stats": {
+    "simulators": "active simulators",
+    "languages": "initial languages",
+    "static": "ready for GitHub Pages"
+  },
+  "catalog": {
+    "eyebrow": "Dynamic catalog",
+    "title": "Available simulators",
+    "description": "Cards are generated from data/simulators.json. To add new topics, create a folder, add a data entry and include translated text.",
+    "open": "Open simulator",
+    "topics": "Topics",
+    "level": "Level"
+  },
+  "learn": {
+    "phenomenon": "Phenomenon",
+    "variables": "Variables",
+    "results": "Results",
+    "concepts": "Concepts",
+    "educationalUse": "Educational use"
+  },
+  "about": {
+    "eyebrow": "Scalable foundation",
+    "title": "Built as a platform, not as a single isolated page",
+    "body": "Each simulator has its own URL with independent HTML, CSS, JavaScript and assets. The main catalog only reads data and translations, so the project can grow without editing the central code."
+  },
+  "future": {
+    "title": "Future labs",
+    "items": ["Simple pendulum", "Free fall", "Newton's laws", "Mechanical energy", "Waves", "Electric circuits", "Optics", "Circular motion", "Pressure", "Fluids"]
+  },
+  "credits": {
+    "line1": "Simulators developed by Yandri Franco",
+    "line2": "Web Design Washington Indacochea",
+    "line3": "for the students of Unidad Educativa 30 de Septiembre."
+  },
+  "footer": {
+    "repo": "Ready for GitHub Pages",
+    "backHome": "Back to catalog"
+  },
+  "simulators": {
+    "hooke": {
+      "title": "Hooke's Law",
+      "shortTitle": "LHokke",
+      "description": "Explore how a mass stretches a spring or dynamometer depending on the spring constant and gravity.",
+      "badge": "Forces and elasticity",
+      "introTitle": "Virtual dynamometer",
+      "intro": "Change mass, gravity and spring constant k to observe applied force and spring elongation.",
+      "variables": "Mass, gravity, force, spring constant k and elongation.",
+      "results": "Observe force, stretching, spring animation and experiment table.",
+      "formula": "Applied relationship: F = kx, with F = mg.",
+      "use": "Helps students understand proportionality between force and deformation in elastic materials.",
+      "controls": {
+        "mass": "Mass (kg)",
+        "spring": "Spring constant k (N/m)",
+        "gravity": "Gravity (m/s²)",
+        "apply": "Apply mass",
+        "reset": "Reset",
+        "table": "Experiment table",
+        "force": "Force",
+        "elongation": "Elongation"
+      }
+    },
+    "movimiento-parabolico": {
+      "title": "Projectile Motion",
+      "shortTitle": "MovPar",
+      "description": "Simulate launches with initial velocity, angle and gravity to analyze trajectory, range and maximum height.",
+      "badge": "Two-dimensional kinematics",
+      "introTitle": "Projectile launch",
+      "intro": "Adjust initial velocity, angle, gravity and simulation speed to compare projectile motion trials.",
+      "variables": "Initial velocity, launch angle and gravity.",
+      "results": "Observe trajectory, graphs, velocity components, maximum height, range and flight time.",
+      "formula": "Applied concepts: uniform horizontal motion and uniformly accelerated vertical motion.",
+      "use": "Connects velocity vectors, gravity and position during a launch.",
+      "controls": {
+        "velocity": "Initial velocity",
+        "angle": "Angle",
+        "gravity": "Gravity",
+        "speed": "Simulation speed",
+        "fire": "Launch",
+        "pause": "Pause",
+        "resume": "Resume",
+        "step": "Step",
+        "reset": "Reset",
+        "maxHeight": "Max height",
+        "range": "Range",
+        "time": "Time",
+        "distance": "Distance",
+        "height": "Height",
+        "start": "Start",
+        "trial": "Trial",
+        "current": "Current"
+      }
+    }
+  }
+}

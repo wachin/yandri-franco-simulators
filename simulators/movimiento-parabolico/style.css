@@ -1,0 +1,24 @@
+.projectile-layout {
+  grid-template-columns: 330px minmax(0, 1fr);
+}
+
+.projectile-canvas-panel {
+  display: grid;
+  gap: 12px;
+}
+
+#cv,
+#graf {
+  min-width: 680px;
+  background:
+    linear-gradient(rgba(20, 85, 217, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20, 85, 217, 0.05) 1px, transparent 1px),
+    #ffffff;
+  background-size: 24px 24px;
+}
+
+@media (max-width: 920px) {
+  .projectile-layout {
+    grid-template-columns: 1fr;
+  }
+}

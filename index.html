@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plataforma educativa de simuladores de Física.">
+  <title>Laboratorio Virtual de Física | Yandri Franco</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Principal">
+      <a class="brand" href="./">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        <span data-i18n="nav.brand">Laboratorio Virtual de Física</span>
+      </a>
+      <div class="nav-actions">
+        <div class="nav-links">
+          <a href="#catalog" data-i18n="nav.catalog">Simuladores</a>
+          <a href="#about" data-i18n="nav.about">Proyecto</a>
+        </div>
+        <label>
+          <span class="sr-only" data-i18n="nav.language">Idioma</span>
+          <select class="language-select" data-language-select aria-label="Idioma">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+          </select>
+        </label>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner hero-grid">
+        <div>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Unidad Educativa 30 de Septiembre</p>
+          <h1 data-i18n="hero.title">Simuladores de Física para explorar, medir y comprender</h1>
+          <p class="hero-copy" data-i18n="hero.subtitle">Una plataforma educativa modular creada para que cada fenómeno físico tenga su propio espacio interactivo, claro y listo para crecer.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#catalog" data-i18n="hero.primaryCta">Ver simuladores</a>
+            <a class="button" href="#about" data-i18n="hero.secondaryCta">Cómo ampliar la plataforma</a>
+          </div>
+          <div class="stats" aria-label="Resumen">
+            <div class="stat"><strong>2</strong><span data-i18n="stats.simulators">simuladores activos</span></div>
+            <div class="stat"><strong>2</strong><span data-i18n="stats.languages">idiomas iniciales</span></div>
+            <div class="stat"><strong>100%</strong><span data-i18n="stats.static">publicable en GitHub Pages</span></div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="trajectory"></div>
+          <div class="spring-demo"><span></span><strong></strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="catalog">
+      <div class="section-inner">
+        <p class="eyebrow" data-i18n="catalog.eyebrow">Catálogo dinámico</p>
+        <h2 data-i18n="catalog.title">Simuladores disponibles</h2>
+        <p class="section-lead" data-i18n="catalog.description">Las tarjetas se generan desde data/simulators.json.</p>
+        <div class="catalog-grid" data-catalog></div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-inner">
+        <p class="eyebrow" data-i18n="about.eyebrow">Base escalable</p>
+        <h2 data-i18n="about.title">Diseñada como una plataforma, no como una página aislada</h2>
+        <p class="section-lead" data-i18n="about.body">Cada simulador vive en su propia URL.</p>
+        <h3 data-i18n="future.title">Próximos laboratorios</h3>
+        <div class="future-list" data-future-list></div>
+      </div>
+    </section>
+  </main>
+
+  <section class="credits" aria-label="Créditos">
+    <p><strong data-i18n="credits.line1">Simuladores desarrollados por Yandri Franco</strong></p>
+    <p data-i18n="credits.line2">Diseño Web Washington Indacochea</p>
+    <p data-i18n="credits.line3">para los estudiantes de la Unidad Educativa 30 de Septiembre.</p>
+  </section>
+
+  <footer class="site-footer">
+    <span data-i18n="footer.repo">Proyecto listo para GitHub Pages</span>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
