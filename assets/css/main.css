@@ -443,6 +443,17 @@ h1 {
   color: white;
 }
 
+.credit-link {
+  margin-left: 6px;
+  color: #93c5fd;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.credit-link:hover {
+  color: #dbeafe;
+}
+
 .site-footer {
   padding: 22px 16px;
   color: var(--muted);

@@ -268,6 +268,17 @@ canvas {
 
 .credits strong { color: white; }
 
+.credit-link {
+  margin-left: 6px;
+  color: #93c5fd;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.credit-link:hover {
+  color: #dbeafe;
+}
+
 @media (max-width: 920px) {
   .lab-layout { grid-template-columns: 1fr; }
   .panel { position: static; }
