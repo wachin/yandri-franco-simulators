@@ -52,7 +52,11 @@
   },
   "footer": {
     "repo": "Proyecto listo para GitHub Pages",
-    "backHome": "Volver al catálogo"
+    "backHome": "Volver al catálogo",
+    "forkKicker": "Proyecto abierto",
+    "forkTitle": "Haz un fork y crea tu propia versión del laboratorio",
+    "forkBody": "Este proyecto está publicado en GitHub para que docentes, estudiantes y desarrolladores puedan estudiarlo, adaptarlo y ampliarlo con nuevos simuladores.",
+    "forkCta": "Ver repositorio en GitHub y crear un fork"
   },
   "simulators": {
     "hooke": {
